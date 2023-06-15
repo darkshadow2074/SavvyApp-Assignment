@@ -42,6 +42,10 @@ const Pagination = (props) => {
         className={classnames("pagination-item", {
           disabled: currentPage === 1,
         })}
+        style={{
+          cursor: currentPage === 1 ? "not-allowed" : "pointer",
+          pointerEvents: currentPage === 1 ? "none" : "",
+        }}
         onClick={onPrevious}
       >
         <div className="arrow left" />
@@ -74,6 +78,10 @@ const Pagination = (props) => {
         className={classnames("pagination-item", {
           disabled: currentPage === lastPage,
         })}
+        style={{
+          cursor: currentPage === lastPage ? "not-allowed" : "pointer",
+          pointerEvents: currentPage === lastPage ? "none" : "",
+        }}
         onClick={onNext}
       >
         <div className="arrow right" />
