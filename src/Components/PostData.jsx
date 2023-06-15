@@ -24,7 +24,7 @@ export const PostData = () => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
     return filteredData.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, posts]);
+  }, [currentPage, filteredData]);
 
   const onSelectHandler = (e) =>
     dispatch({ type: SORT_BY, payload: e.target.value });
