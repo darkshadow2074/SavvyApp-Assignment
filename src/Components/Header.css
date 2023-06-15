@@ -1,0 +1,45 @@
+:root {
+  --nav-background: #fff;
+  --body-background-color: #f7f7f7;
+  --nav-boxShadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  --primary-color: #167aff;
+  --light-black-color: #7e818c;
+  --inputBox-color: #f5f5f6;
+}
+.header-container {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background);
+  box-shadow: var(--nav-boxShadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.no-display {
+  display: none;
+}
+.header-container h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+}
+.searchbox {
+  width: 250px;
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--inputBox-color);
+  margin-right: 50px;
+  box-shadow: var(--nav-boxShadow);
+}
+.searchbox input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
