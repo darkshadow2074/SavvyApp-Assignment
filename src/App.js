@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import MyPost from "./Components/MyPost.jsx";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <MyPost />
+    </div>
+  );
 }
 
 export default App;
