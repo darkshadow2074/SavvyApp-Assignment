@@ -12,6 +12,8 @@ This is a React application that retrieves a list of posts from an API and allow
 
 - Error handling: The application handles errors that may occur during the API request. If an error occurs, an error message is displayed to the user, indicating that something went wrong.
 
+- Test code is written but there is some issue with the test code because of which it's not working properly but I will look into the issue in future and will fix it.
+
 ## Getting Started
 
 Follow these steps to get the application up and running on your local machine:
